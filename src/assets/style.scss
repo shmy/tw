@@ -1,0 +1,152 @@
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F3F3F3;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited, &:hover, &:active {
+    color: #fff;
+  }
+}
+.hover-hand {
+  cursor: pointer;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flex-row,
+.flex-column {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-w-auto,
+.flex-h-auto {
+  flex: 1;
+}
+
+.flex-w-auto {
+  width: 0;
+  min-width: 0
+}
+
+.flex-h-auto {
+  height: 0;
+  min-height: 0
+}
+
+.header {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px rgba(142, 142, 142, .3);
+
+  .header-container {
+    position: relative;
+  }
+
+  .logo {
+    width: 100px;
+    height: 34px;
+  }
+
+  .profile {
+    height: 100%;
+    width: 70px;
+    //background-color: red;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    .profile-popup {
+      height: auto;
+      width: 140px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+      padding: 20px 0 10px 0;
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0;
+    }
+    .profile-icon {
+      font-size: 16px;
+      transition: .3s;
+      &.opened {
+        transform: rotate(180deg);
+      }
+    }
+    .profile-popup-item {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      color: #7A8692;
+      .profile-popup-item-text,
+      .profile-popup-item-icon {
+        font-weight: bold;
+      }
+      .profile-popup-item-text {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      .profile-popup-item-icon {
+        font-size: 16px;
+        vertical-align: -2px;
+        width: 19px;
+        display: inline-block;
+      }
+      &:hover {
+        background-color: #efefef;
+      }
+    }
+  }
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.footer {
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0 -3px 5px rgba(214, 206, 206, .3);
+  font-size: 12px;
+  color: #435466;
+  font-weight: 500;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.router-view {
+  padding: 20px 30px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

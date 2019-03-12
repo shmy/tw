@@ -1,0 +1,1 @@
+(window["j"]=window["j"]||[]).push([["chunk-2d0e8c4f"],{"8b4c":function(n,e,t){"use strict";t.r(e);var u=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n    cruise\n")])},c=[],l=t("2877"),r={},i=Object(l["a"])(r,u,c,!1,null,null,null);e["default"]=i.exports}}]);
